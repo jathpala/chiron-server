@@ -7,12 +7,17 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
-taskipy = "^1.13.0"
 fastapi = "^0.111.1"
 alembic = "^1.13.2"
 sqlalchemy = "^2.0.31"
 
+[tool.poetry.group.dev.dependencies]
+taskipy = "^1.13.0"
+pylint = "^3.2.5"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.taskipy.tasks]
+dev = "fastapi dev chiron_server"
