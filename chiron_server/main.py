@@ -13,7 +13,7 @@ from .dependencies import get_settings
 app = FastAPI()
 
 @app.get("/")
-async def root(settings: Annotated[Settings, Depends(get_settings)]):
+def root(settings: Annotated[Settings, Depends(get_settings)]):
     """
     Return basic service information
     """

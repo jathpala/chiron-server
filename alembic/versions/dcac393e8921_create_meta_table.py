@@ -30,7 +30,7 @@ def upgrade() -> None:
         meta_tbl,
         [
             {"key": "schema", "value": "chiron_server"},
-            {"key": "version", "value": "1"}
+            {"key": "version", "value": "1.0"}
         ]
     )
 
